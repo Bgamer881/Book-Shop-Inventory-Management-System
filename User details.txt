@@ -1,0 +1,5 @@
+User name = admin
+Password = 12345
+
+User name = bimsara
+Password = 1234

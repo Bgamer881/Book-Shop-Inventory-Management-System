@@ -1,0 +1,30 @@
+1.How to install Application:
+
+
+i.Run "Setup.exe" and install.
+
+ii.Install "wampserver".
+
+
+2.Setup database:
+
+
+i.Start "wampserver".
+
+ii.go to "Show hidden icons" in Windows Taskbar and click "WAMPSERVER".
+
+iii.Click and choose "phpMyAdmin".
+
+iv.In there you can create a new database, give name as "mydb".
+
+v.After creating the database you can go to that database and choose 
+  import option.
+
+vi.Here in "Choose file" option choose the file "mydb.sql" from "Setup"
+  Folder and press "Go" your database will be created.
+
+vii.Now you can close "phpMyAdmin".
+
+
+viii."WAMPSERVER" must be allways online only when using the Application.
+
