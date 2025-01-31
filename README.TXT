@@ -1,32 +1,46 @@
-========================
-BUILD OUTPUT DESCRIPTION
-========================
+# Bookshop Inventory Management System
 
-When you build an Java application project that has a main class, the IDE
-automatically copies all of the JAR
-files on the projects classpath to your projects dist/lib folder. The IDE
-also adds each of the JAR files to the Class-Path element in the application
-JAR files manifest file (MANIFEST.MF).
+## Overview
+This application provides bookshops with an efficient inventory management system.
+Employees can manage books, generate invoices, and track stock levels.
+Administrators have additional privileges to oversee users and inventory records.
 
-To run the project from the command line, go to the dist folder and
-type the following:
+## Features
+- **User Login**: Employees and administrators can log in using a secure username and password system.
+  - Displays error messages for incorrect credentials.
+  - Grants access to the main interface upon successful login.
 
-java -jar "Bookshop_Inventory_Management_System.jar" 
+- **Inventory Management**:
+  - Add, update, view, and delete books from the inventory.
+  - Search functionality to find books based on book codes.
 
-To distribute this project, zip up the dist folder (including the lib folder)
-and distribute the ZIP file.
+- **Invoice Generation**:
+  - Generate invoices based on book purchases.
+  - Auto-fetch book details using a book code.
+  - Calculate total cost, payment, and balance.
+  - Print invoices for record-keeping.
 
-Notes:
+- **User Management** (Admin Only):
+  - Add or remove users from the system.
+  - Securely manage employee accounts.
 
-* If two JAR files on the project classpath have the same name, only the first
-JAR file is copied to the lib folder.
-* Only JAR files are copied to the lib folder.
-If the classpath contains other types of files or folders, these files (folders)
-are not copied.
-* If a library on the projects classpath also has a Class-Path element
-specified in the manifest,the content of the Class-Path element has to be on
-the projects runtime path.
-* To set a main class in a standard Java project, right-click the project node
-in the Projects window and choose Properties. Then click Run and enter the
-class name in the Main Class field. Alternatively, you can manually type the
-class name in the manifest Main-Class element.
+## Usage
+1. **Employee Access**
+   - Log in with valid credentials.
+   - Add, update, view, and delete books.
+   - Generate invoices for book purchases.
+
+2. **Admin Access**
+   - Log in with admin credentials.
+   - Manage inventory and view stock details.
+   - Add or remove users from the system.
+
+## Technologies Used
+- **Programming Language**: Java
+- **Database**: MySQL
+- **Development Environment**: NetBeans
+- **Server**: WAMP Server
+- **Libraries/Tools**:
+  - MySQL Connector J (mysql-connector-j-8.1.0)
+  - ICPinst.exe (for installer packaging)
+  - Launch4j (for creating executable files)
